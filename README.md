@@ -33,8 +33,10 @@ demoapp-service   10.1.0.50:9000,10.1.0.52:9000   51m
 
 wget http://10.101.213.180/calc/sum?params=1,2,3 -O sum && cat sum
 
-# https://github.com/kubernetes/dns/blob/master/docs/specification.md
-# <service>.<ns>.svc.<zone>
+'''
+   https://github.com/kubernetes/dns/blob/master/docs/specification.md
+   <service>.<ns>.svc.<zone>
+'''
 wget http://demoapp-service.default.svc.cluster.local/calc/sum?params=1,2,3 -O sum && cat sum
 
 # <service>
